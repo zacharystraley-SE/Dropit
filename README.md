@@ -1,6 +1,6 @@
 # Dropit
 
-Drop files in. Pick a format. Get converted files back.
+Need to convert a file to a different format? Simply drag your file and Dropit! .mp4 to .mov? Dropit! .wav to .mov? Dropit!
 
 Dropit is a native macOS file converter designed for a quick, private workflow. It processes files entirely on your Mac: no accounts, uploads, telemetry, conversion history, or cloud service.
 
