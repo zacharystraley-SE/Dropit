@@ -1,6 +1,6 @@
 # Dropit
 
-Dropit is a native macOS file converter designed with simplicity in mind. It processes files entirely on your Mac. No need to make an account, uploads, telemetry, conversion history, or cloud service.
+Dropit is a native macOS file converter designed with simplicity in mind. It processes files entirely on your Mac, eliminating the need to use online file-conversion services.
 
 How many times have you been LOCKED IN on a task, only to hit a bump in the road because your .mp4 needs to be an .mov? Or a .wav needs to be an .mp3? With Dropit, simply drag your file(s) to the application window, select your file's output destination and desired format, and voila! That's all there is to it. Need a format that isn't shown? Have a design suggestion? I'd love to hear about it. 
 
