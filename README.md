@@ -18,21 +18,19 @@
 
 ## Overview
 
-Dropit converts files entirely on your Mac. No uploads, no accounts, no queue, and no wondering where your documents ended up.
+Dropit converts files entirely on your Mac. No uploads, no queue, no wondering where your documents ended up.
 
-How many times have you been **locked in** on a task, only to hit a bump because your `.mp4` needs to be a `.mov`, your `.wav` needs to be an `.mp3`, or several scans need to become one PDF? Dropit is built to make that interruption as short as possible.
+How many times have you been LOCKED IN on a task, only to hit a bump in the road because your `.mp4` needs to be a `.mov`? Or a `.wav` needs to be an `.mp3`?
 
 ## How it works
 
-1. Drag one or more files onto the Dropit window.
-2. Pick an output format and destination.
-3. Convert.
+1. Drag your file or files onto the Dropit window.
+2. Pick an output destination and a format.
+3. Voila.
 
 That's all there is to it.
 
 ## What it converts
-
-The first release is being validated with the following core format set:
 
 | Category | Formats |
 | :--- | :--- |
@@ -42,33 +40,28 @@ The first release is being validated with the following core format set:
 | **Video** | MP4, QuickTime, MKV (Matroska), WebM, AVI, M4V |
 | **Extraction** | Audio tracks pulled from video |
 
-Compatible files can convert together as a batch. Dropit shows progress, supports cancellation, reveals finished files in Finder, and never overwrites an existing file.
+**Batch behavior:** compatible files convert together as a batch. Dropit shows batch progress, supports cancellation, and can reveal finished files in Finder. It never overwrites an existing file.
 
 > [!NOTE]
-> Format support is finalized only after it passes conversion tests on both Apple silicon and Intel Macs. Complex Office and PDF-to-editable conversions are best effort and may not preserve every layout detail.
-
-## Privacy by design
-
-Conversions stay on your Mac. Dropit has no accounts, uploads, telemetry, conversion history, or remote document processing. Bundled conversion engines run locally alongside native macOS frameworks.
+> Complex Office documents may not retain every layout detail. Dropit handles them locally with LibreOffice, but those conversions are still best effort.
 
 ## Why build this? Aren't there other file-conversion solutions?
 
-Yes, there are plenty. Most are web-based, though, so I have no idea where my personal documents go after I upload them for conversion. I'm looking at you, CloudConvert.
+Yes, there are plenty of file-conversion platforms. Most of them are web-based, though, so I have no idea where my personal documents go after I upload them for conversion. (I'm looking at YOU, CloudConvert.)
 
-I do a lot of homelab projects, which means I'm constantly reaching for conversion sites. I wanted a simple app that lives on the desktop—something as straightforward as AirDrop or Blip, ready at a moment's notice.
+I do a lot of homelab projects, which means I'm constantly hitting sites like that. I wanted a super simple app that lives on your desktop, as straightforward as AirDrop or Blip, ready to convert files at a moment's notice.
 
 ## Roadmap
 
-- [ ] **Broader format support.** PDF creation, merging, text recovery and OCR; Office documents, spreadsheets and presentations; more image, media, subtitle and ebook formats.
-- [ ] **Native releases.** Separate signed and notarized downloads for Apple silicon and Intel so nobody has to carry two copies of the bundled conversion engines.
-- [ ] **Themes.** Retro internet-core themes, plus an official Dropit theme dedicated to my chocolate Lab, who I named the app after because I keep telling him to *“Drop iiiit!”*
+- [ ] **More formats.** PDF creation, merging, text recovery and OCR; Office documents, spreadsheets and presentations; plus more image, media, subtitle and ebook formats. Separate Apple silicon and Intel builds keep all those bundled libraries from turning into one giant download.
+- [ ] **Themes.** Retro internet-core themes, plus an official Dropit theme dedicated to my chocolate Lab, who I actually named this app after because I keep telling him to *"Drop iiiit!"*
 
 ## Status
 
 Dropit is in active development for macOS 14 and later on Apple silicon and Intel Macs. The source is proprietary and maintained in a private repository.
 
-Screenshots and separate signed, notarized DMG downloads will be posted once the first release is ready.
+Screenshots and signed, notarized DMG downloads will be posted here once the first release is ready.
 
 ## Feedback
 
-Need a format that isn't listed? Have a design suggestion? Open an issue or reach out directly. I'd love to hear about it.
+Need a format that isn't listed? Have a design suggestion? I'd love to hear about it. Open an issue or reach out directly.
