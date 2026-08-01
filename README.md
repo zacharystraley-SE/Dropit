@@ -51,16 +51,27 @@ Yes, there are plenty of file-conversion platforms. Most of them are web-based, 
 
 I do a lot of homelab projects, which means I'm constantly hitting sites like that. I wanted a super simple app that lives on your desktop, as straightforward as AirDrop or Blip, ready to convert files at a moment's notice.
 
+## Download
+
+The first retro preview is available for Apple silicon Macs:
+
+**[Download Dropit 0.1.0 Retro Preview](https://github.com/zacharystraley-SE/Dropit/releases/download/v0.1.0-retro-preview/Dropit-0.1.0-macOS-arm64-local-libreoffice-retro.dmg)**
+
+SHA-256: `304a64673b85d089cfbe170ce405cc40475c8571e8426154efc522094cf29f19`
+
+> [!WARNING]
+> This preview is ad-hoc signed and not notarized. macOS may show a Gatekeeper warning. It bundles LibreOffice and Pandoc, but not FFmpeg media conversion. A complete Developer ID-signed and notarized release will follow.
+
 ## Roadmap
 
 - [ ] **More formats.** PDF creation, merging, text recovery and OCR; Office documents, spreadsheets and presentations; plus more image, media, subtitle and ebook formats. Separate Apple silicon and Intel builds keep all those bundled libraries from turning into one giant download.
-- [ ] **Themes.** Retro internet-core themes, plus an official Dropit theme dedicated to my chocolate Lab, who I actually named this app after because I keep telling him to *"Drop iiiit!"*
+- [x] **Themes.** The first retro internet-core theme is now available. An official Dropit theme dedicated to my chocolate Lab is still planned—he is, after all, why I keep saying *"Drop iiiit!"*
 
 ## Status
 
 Dropit is in active development for macOS 14 and later on Apple silicon and Intel Macs. The source is proprietary and maintained in a private repository.
 
-Screenshots and signed, notarized DMG downloads will be posted here once the first release is ready.
+The current Apple silicon preview is available above. Signed, notarized Apple silicon and Intel builds will follow.
 
 ## Feedback
 
