@@ -18,7 +18,7 @@
 
 ## Overview
 
-Dropit converts files entirely on your Mac. No more uploading your sacred documents to some mystery cloud before being able to download your desired format.
+Dropit converts files entirely on your Mac. No more uploading your sacred documents to a mysterious cloud before you can download format you desire.
 
 How many times have you been LOCKED IN on a task, only to hit a bump in the road because your `.mp4` needs to be a `.mov`? Or a `.wav` needs to be an `.mp3`?
 
