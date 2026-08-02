@@ -2,77 +2,65 @@
 
 # Dropit
 
-**A native macOS file converter that never touches the internet.**
+**A compact Mac file converter that keeps your files on your Mac.**
 
 ![Platform](https://img.shields.io/badge/platform-macOS%2014%2B-000000?style=flat-square)
-![Architecture](https://img.shields.io/badge/arch-Apple%20Silicon%20%7C%20Intel-8A8A8A?style=flat-square)
-![Processing](https://img.shields.io/badge/processing-100%25%20local-2EA44F?style=flat-square)
-![Status](https://img.shields.io/badge/status-in%20development-D97706?style=flat-square)
+![Architecture](https://img.shields.io/badge/arch-Apple%20Silicon-8A8A8A?style=flat-square)
+![Processing](https://img.shields.io/badge/processing-local-2EA44F?style=flat-square)
+![Release](https://img.shields.io/badge/release-v0.1.0-0969DA?style=flat-square)
+
+<img src="docs/dropit-0.1.0.jpg" width="320" alt="Dropit 0.1.0 compact file drop window">
 
 </div>
 
----
+## Download
 
-<!-- Screenshot goes here once the first release is ready -->
-<!-- <div align="center"><img src="docs/screenshot.png" width="700" alt="Dropit main window"></div> -->
+Download **[Dropit 0.1.0 for Apple Silicon](https://github.com/zacharystraley-SE/Dropit/releases/tag/v0.1.0)**. It requires macOS 14 or later.
 
-## Overview
+> [!WARNING]
+> Dropit 0.1.0 is ad-hoc signed and is not notarized or verified by Apple. Follow the one-time macOS instructions below. Do not disable Gatekeeper or run Terminal commands.
 
-Dropit converts files entirely on your Mac. No more uploading your sacred documents to a mysterious cloud before you can download the format you desire.
+## Install an unsigned copy
 
-How many times have you been LOCKED IN on a task, only to hit a bump in the road because your `.mp4` needs to be a `.mov`? Or a `.wav` needs to be an `.mp3`?
+1. Download the DMG from [GitHub Releases](https://github.com/zacharystraley-SE/Dropit/releases/tag/v0.1.0).
+2. Open **Downloads** in Finder and double-click the DMG.
+3. Drag **Dropit** into **Applications**, then eject the disk image.
+4. Open **Applications** and double-click **Dropit** once.
+5. When macOS blocks it, close the warning without moving the app to Trash.
+6. Open Apple menu → **System Settings** → **Privacy & Security**.
+7. Scroll to **Security** and click **Open Anyway** beside the Dropit message.
+8. Authenticate with your Mac login password or Touch ID, then confirm **Open**.
+9. This exception is needed only once.
+
+**Open Anyway** appears only after the first launch attempt and remains available for roughly one hour. A managed Mac may require an administrator. See [Apple's official guidance](https://support.apple.com/102445) for details.
 
 ## How it works
 
-1. Drag your file or files onto the Dropit window.
-2. Pick an output destination and a format.
-3. Voila.
+1. Select files or drag them onto Dropit.
+2. Choose a compatible format and output location.
+3. Convert, then reveal the results in Finder.
 
-That's all there is to it.
+Dropit supports batches, cancellation, progress, collision-safe filenames, and combining ordered files into a PDF.
 
-## What it converts
+## Supported workflows
 
-| Category | Formats |
+| Category | Dropit 0.1.0 workflows |
 | :--- | :--- |
-| **Images** | PNG, JPEG, HEIC, TIFF, BMP, GIF |
-| **Documents** | Word, OpenDocument, EPUB, HTML, Markdown, reStructuredText, Rich Text, LaTeX, plain text |
-| **Audio** | MP3, M4A, AAC, WAV, FLAC, Opus |
-| **Video** | MP4, QuickTime, MKV (Matroska), WebM, AVI, M4V |
-| **Extraction** | Audio tracks pulled from video |
+| **Images** | Convert common still-image formats including PNG, JPEG, HEIC, TIFF, BMP, WebP, GIF, and others supported by macOS. |
+| **PDFs** | Create or combine PDFs, make a searchable PDF with OCR, export pages as images or individual PDFs, create multipage TIFFs, and recover text into document formats. |
+| **Documents** | Convert Word, OpenDocument, rich text, HTML, plain text, EPUB, Markdown, reStructuredText, LaTeX, and other Pandoc formats. |
+| **Spreadsheets** | Convert Excel, OpenDocument Spreadsheet, CSV, TSV, DBF, and PDF workflows. |
+| **Presentations** | Convert PowerPoint and OpenDocument Presentation files or export them as PDF. |
 
-**Batch behavior:** compatible files convert together as a batch. Dropit shows batch progress, supports cancellation, and can reveal finished files in Finder. It never overwrites an existing file.
+Complex Office documents and recovered PDF text are best effort and may not preserve every layout detail.
 
 > [!NOTE]
-> Complex Office documents may not retain every layout detail. Dropit handles them locally with LibreOffice, but those conversions are still best effort.
+> Audio and video conversion is unavailable in v0.1.0 because FFmpeg is not bundled.
 
-## Why build this? Aren't there other file-conversion solutions?
+## Privacy
 
-Yes, there are plenty of file-conversion platforms. Most of them are web-based, though, so I have no idea where my personal documents go after I upload them for conversion. (I'm looking at YOU, CloudConvert.)
-
-I do a lot of homelab projects, which means I'm constantly hitting sites like that. I wanted a super simple app that lives on your desktop, as straightforward as AirDrop or Blip, ready to convert files at a moment's notice.
-
-## Download
-
-The first retro preview is available for Apple silicon Macs:
-
-**[Download Dropit 0.1.0 Retro Preview](https://github.com/zacharystraley-SE/Dropit/releases/download/v0.1.0-retro-preview/Dropit-0.1.0-macOS-arm64-local-libreoffice-retro.dmg)**
-
-SHA-256: `304a64673b85d089cfbe170ce405cc40475c8571e8426154efc522094cf29f19`
-
-> [!WARNING]
-> This preview is ad-hoc signed and not notarized. macOS may show a Gatekeeper warning. It bundles LibreOffice and Pandoc, but not FFmpeg media conversion. A complete Developer ID-signed and notarized release will follow.
-
-## Roadmap
-
-- [ ] **More formats.** PDF creation, merging, text recovery and OCR; Office documents, spreadsheets and presentations; plus more image, media, subtitle and ebook formats. Separate Apple silicon and Intel builds keep all those bundled libraries from turning into one giant download.
-- [x] **Themes.** The first retro internet-core theme is now available. An official Dropit theme dedicated to my chocolate Lab is still planned—he is, after all, why I keep saying *"Drop iiiit!"*
-
-## Status
-
-Dropit is in active development for macOS 14 and later on Apple silicon and Intel Macs. The source is proprietary and maintained in a private repository.
-
-The current Apple silicon preview is available above. Signed, notarized Apple silicon and Intel builds will follow.
+Conversions run locally. Dropit does not upload your files.
 
 ## Feedback
 
-Need a format that isn't listed? Have a design suggestion? I'd love to hear about it. Open an issue or reach out directly.
+Need a format that is not listed or found a problem? [Open an issue](https://github.com/zacharystraley-SE/Dropit/issues).
