@@ -11,8 +11,6 @@
 
 <img src="docs/dropit-icon.png" width="96" alt="Dropit app icon">
 
-<img src="docs/dropit-interface.jpg" width="320" alt="Dropit compact file drop window">
-
 </div>
 
 ## Download
@@ -39,10 +37,12 @@ Download **[Dropit 0.1.1 for Apple Silicon](https://github.com/zacharystraley-SE
 ## How it works
 
 1. Select files or drag them onto Dropit.
-2. Choose a compatible format and output location.
+2. Choose a compatible format. On the first conversion, choose a default output folder; the compact 480-point window previews the exact output names before conversion.
 3. Convert, then reveal the results in Finder.
 
-Dropit supports batches, cancellation, progress, collision-safe filenames, and combining ordered files into a PDF.
+Dropit supports ordered batches, collision-safe planned filenames, progress, retrying failed files, clipboard diagnostics, Finder reveal, and combining ordered files into a PDF. Stopping a batch finishes its current file and keeps untouched files staged.
+
+The default destination persists on your Mac until changed in Settings. Settings also offers optional background-only completion notifications and local job history. Completed jobs are kept for one month by default (or 1 week, 3 months, 6 months, 1 year, or never); failed jobs remain until manually removed.
 
 ## Supported workflows
 
@@ -61,7 +61,7 @@ Complex Office documents and recovered PDF text are best effort and may not pres
 
 ## Privacy
 
-Conversions run locally. Dropit does not upload your files.
+Conversions run locally. Dropit does not upload your files, use external services, or send conversion data off your Mac.
 
 ## Feedback
 
