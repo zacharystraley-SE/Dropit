@@ -7,7 +7,7 @@
 ![Platform](https://img.shields.io/badge/platform-macOS%2014%2B-000000?style=flat-square)
 ![Architecture](https://img.shields.io/badge/arch-Apple%20Silicon-8A8A8A?style=flat-square)
 ![Processing](https://img.shields.io/badge/processing-local-2EA44F?style=flat-square)
-![Release](https://img.shields.io/badge/release-v0.1.1-0969DA?style=flat-square)
+![Release](https://img.shields.io/badge/release-v0.1.2-0969DA?style=flat-square)
 
 <img src="docs/dropit-icon.png" width="96" alt="Dropit app icon">
 
@@ -15,14 +15,14 @@
 
 ## Download
 
-Download **[Dropit 0.1.1 for Apple Silicon](https://github.com/zacharystraley-SE/Dropit/releases/tag/v0.1.1)**. It requires macOS 14 or later.
+Download **[Dropit 0.1.2 for Apple Silicon](https://github.com/zacharystraley-SE/Dropit/releases/tag/v0.1.2)**. It requires macOS 14 or later.
 
 > [!WARNING]
-> Dropit 0.1.1 is ad-hoc signed and is not notarized or verified by Apple. Follow the one-time macOS instructions below. Do not disable Gatekeeper or run Terminal commands.
+> Dropit 0.1.2 is ad-hoc signed and is not notarized or verified by Apple. Follow the one-time macOS instructions below. Do not disable Gatekeeper or run Terminal commands.
 
 ## How to Install Dropit
 
-1. Download the DMG from [GitHub Releases](https://github.com/zacharystraley-SE/Dropit/releases/tag/v0.1.1).
+1. Download the DMG from [GitHub Releases](https://github.com/zacharystraley-SE/Dropit/releases/tag/v0.1.2).
 2. Open **Downloads** in Finder and double-click the DMG.
 3. Drag **Dropit** into **Applications**, then eject the disk image.
 4. Open **Applications** and double-click **Dropit** once.
