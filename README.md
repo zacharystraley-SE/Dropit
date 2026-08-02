@@ -13,51 +13,57 @@
 
 </div>
 
-Dropit is a native macOS utility for quick, private file conversion. Its compact window keeps the queue, output format, progress, and results in one focused place without uploading files or requiring an account.
-
-![Dropit interface](docs/dropit-interface.jpg)
-
 ## Download
 
-Download **[Dropit 0.1.1 for Apple Silicon](https://github.com/zacharystraley-SE/Dropit/releases/tag/v0.1.1)**. Dropit requires macOS 14 or later and an Apple Silicon Mac.
+Download **[Dropit 0.1.1 for Apple Silicon](https://github.com/zacharystraley-SE/Dropit/releases/tag/v0.1.1)**. It requires macOS 14 or later.
 
 > [!WARNING]
-> The current release is ad-hoc signed and is not notarized by Apple. Do not disable Gatekeeper or run Terminal commands to install it.
+> Dropit 0.1.1 is ad-hoc signed and is not notarized or verified by Apple. Follow the one-time macOS instructions below. Do not disable Gatekeeper or run Terminal commands.
 
-## Install
+## How to Install Dropit
 
-1. Download `Dropit-0.1.1-macOS-arm64-unsigned.dmg` from the [v0.1.1 release](https://github.com/zacharystraley-SE/Dropit/releases/tag/v0.1.1).
-2. Open the DMG, drag **Dropit** to **Applications**, and eject the disk image.
-3. Open **Dropit** once from **Applications**. If macOS blocks it, close the warning without deleting the app.
-4. Open **System Settings → Privacy & Security**, select **Open Anyway** beside Dropit, authenticate, and confirm **Open**.
+1. Download the DMG from [GitHub Releases](https://github.com/zacharystraley-SE/Dropit/releases/tag/v0.1.1).
+2. Open **Downloads** in Finder and double-click the DMG.
+3. Drag **Dropit** into **Applications**, then eject the disk image.
+4. Open **Applications** and double-click **Dropit** once.
+5. When macOS blocks it, close the warning without moving the app to Trash.
+6. Open Apple menu → **System Settings** → **Privacy & Security**.
+7. Scroll to **Security** and click **Open Anyway** beside the Dropit message.
+8. Authenticate with your Mac login password or Touch ID, then confirm **Open**.
+9. This exception is needed only once.
 
-That exception is required only once. See [Apple's official guidance](https://support.apple.com/102445) for details.
+**Open Anyway** appears only after the first launch attempt and remains available for roughly one hour. A managed Mac may require an administrator. See [Apple's official guidance](https://support.apple.com/102445) for details.
 
-## The conversion flow
+## How it works
 
-1. Drop files onto the compact window or choose them with **Choose Files…**.
-2. Select the output format. On the first conversion, choose a default destination folder; Dropit uses it for future conversions until you change it in Settings.
-3. Review the planned output names, then select **Convert**.
-4. Watch determinate progress, retry failures when needed, and reveal completed files in Finder.
+1. Select files or drag them onto Dropit.
+2. Choose a compatible format. On the first conversion, choose a default output folder; the compact 480-point window previews the exact output names before conversion.
+3. Convert, then reveal the results in Finder.
 
-The window keeps the app title **Drop it** centered, with Settings available at the upper right. The queue shows the source filenames and planned outputs without distracting secondary copy.
+The current compact interface keeps **Drop it** centered in the title bar, with a Settings pill at the upper right and the conversion controls arranged beneath the queue. The queue shows the source filenames and planned outputs without extra subtext competing for attention.
 
-## Settings and history
+Dropit supports ordered batches, collision-safe planned filenames, progress, retrying failed files, clipboard diagnostics, Finder reveal, and combining ordered files into a PDF. Stopping a batch finishes its current file and keeps untouched files staged.
 
-- Change the default destination for all future conversions.
-- Enable background-only notifications when a conversion finishes. Dropit does not notify while you are actively using the app.
-- Review local job history, reveal an output in Finder, remove individual records, or clear all history.
-- Choose completed-job retention: **1 week, 1 month, 3 months, 6 months, 1 year, or Never**. The default is **1 month**. Failed jobs remain until you remove them manually.
+The default destination persists on your Mac until changed in Settings. Settings also offers optional background-only completion notifications and local job history. Completed jobs are kept for one month by default (or 1 week, 3 months, 6 months, 1 year, or never); failed jobs remain until manually removed.
 
 ## Supported workflows
 
-Dropit uses native macOS image and PDF APIs, with Pandoc and LibreOffice available for document, spreadsheet, and presentation workflows when installed. FFmpeg-backed audio and video formats appear only when FFmpeg is available.
+| Category | Dropit workflows |
+| :--- | :--- |
+| **Images** | Convert common still-image formats including PNG, JPEG, HEIC, TIFF, BMP, WebP, GIF, and others supported by macOS. |
+| **PDFs** | Create or combine PDFs, make a searchable PDF with OCR, export pages as images or individual PDFs, create multipage TIFFs, and recover text into document formats. |
+| **Documents** | Convert Word, OpenDocument, rich text, HTML, plain text, EPUB, Markdown, reStructuredText, LaTeX, and other Pandoc formats. |
+| **Spreadsheets** | Convert Excel, OpenDocument Spreadsheet, CSV, TSV, DBF, and PDF workflows. |
+| **Presentations** | Convert PowerPoint and OpenDocument Presentation files or export them as PDF. |
 
-It supports ordered batches, collision-safe output names, progress, stop-after-current cancellation, retries, diagnostics, Finder reveal, and combining ordered files into a PDF. Complex Office documents and recovered PDF text are best effort and may not preserve every layout detail.
+Complex Office documents and recovered PDF text are best effort and may not preserve every layout detail.
+
+> [!NOTE]
+> Audio and video workflows appear only when FFmpeg is available on the Mac. The current public release does not bundle FFmpeg.
 
 ## Privacy
 
-Conversions run locally. Dropit does not upload your files, use external conversion services, or send conversion data off your Mac.
+Conversions run locally. Dropit does not upload your files, use external services, or send conversion data off your Mac.
 
 ## Feedback
 
