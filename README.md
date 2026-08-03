@@ -40,6 +40,8 @@ Download **[Dropit 0.1.5 for Apple Silicon](https://github.com/zacharystraley-SE
 2. Choose a compatible format and use the footer folder control to choose the output folder. The compact 480-point window previews the exact output names before conversion.
 3. Convert, then reveal the results in Finder.
 
+Drop files on the monochrome Dropit target in the menu bar to open its popover and stage them. Dropping never starts conversion; left-clicking opens the popover, while right-clicking shows the version, Settings, and Quit actions.
+
 The current compact interface keeps **Drop it** centered in the title bar, with a Settings pill at the upper right and the conversion controls arranged beneath the queue. The idle state offers a clearly labeled manual file picker and a native folder control for the output location. The queue shows the source filenames and planned outputs without extra subtext competing for attention.
 
 Dropit supports ordered batches, collision-safe planned filenames, progress, retrying failed files, clipboard diagnostics, Finder reveal, and combining ordered files into a PDF. Stopping a batch finishes its current file and keeps untouched files staged.
