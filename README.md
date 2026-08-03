@@ -7,7 +7,7 @@
 ![Platform](https://img.shields.io/badge/platform-macOS%2014%2B-000000?style=flat-square)
 ![Architecture](https://img.shields.io/badge/arch-Apple%20Silicon-8A8A8A?style=flat-square)
 ![Processing](https://img.shields.io/badge/processing-local-2EA44F?style=flat-square)
-![Release](https://img.shields.io/badge/release-v0.1.3-0969DA?style=flat-square)
+![Release](https://img.shields.io/badge/release-v0.1.4-0969DA?style=flat-square)
 
 <img src="docs/dropit-icon.png" width="96" alt="Dropit app icon">
 
@@ -15,14 +15,14 @@
 
 ## Download
 
-Download **[Dropit 0.1.3 for Apple Silicon](https://github.com/zacharystraley-SE/Dropit/releases/tag/v0.1.3)**. It requires macOS 14 or later.
+Download **[Dropit 0.1.4 for Apple Silicon](https://github.com/zacharystraley-SE/Dropit/releases/tag/v0.1.4)**. It requires macOS 14 or later.
 
 > [!WARNING]
-> Dropit 0.1.3 is ad-hoc signed and is not notarized or verified by Apple. Follow the one-time macOS instructions below. Do not disable Gatekeeper or run Terminal commands.
+> Dropit 0.1.4 is ad-hoc signed and is not notarized or verified by Apple. Follow the one-time macOS instructions below. Do not disable Gatekeeper or run Terminal commands.
 
 ## How to Install Dropit
 
-1. Download the DMG from [GitHub Releases](https://github.com/zacharystraley-SE/Dropit/releases/tag/v0.1.3).
+1. Download the DMG from [GitHub Releases](https://github.com/zacharystraley-SE/Dropit/releases/tag/v0.1.4).
 2. Open **Downloads** in Finder and double-click the DMG.
 3. Drag **Dropit** into **Applications**, then eject the disk image.
 4. Open **Applications** and double-click **Dropit** once.
@@ -40,7 +40,7 @@ Download **[Dropit 0.1.3 for Apple Silicon](https://github.com/zacharystraley-SE
 2. Choose a compatible format. On the first conversion, choose a default output folder; the compact 480-point window previews the exact output names before conversion.
 3. Convert, then reveal the results in Finder.
 
-Drop files on the monochrome Dropit target in the menu bar to open its popover and stage them. Dropping never starts conversion; clicking the target opens the same popover normally.
+Drop files on the monochrome Dropit target in the menu bar to open its popover and stage them. Dropping never starts conversion; left-clicking opens the popover, while right-clicking shows the version, Settings, and Quit actions.
 
 The current compact interface keeps **Drop it** centered in the title bar, with a Settings pill at the upper right and the conversion controls arranged beneath the queue. The queue shows the source filenames and planned outputs without extra subtext competing for attention.
 
